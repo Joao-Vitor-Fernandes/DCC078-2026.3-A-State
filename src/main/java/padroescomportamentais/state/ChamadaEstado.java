@@ -4,15 +4,15 @@ public abstract class ChamadaEstado {
 
     public abstract String getEstado();
 
-    public boolean tocar(ChamadaTelefonica chamada) {
-        return false;
-    }
-
     public boolean atender(ChamadaTelefonica chamada) {
         return false;
     }
 
-    public boolean cairNaCaixaPostal(ChamadaTelefonica chamada) {
+    public boolean recusar(ChamadaTelefonica chamada) {
+        return false;
+    }
+
+    public boolean perder(ChamadaTelefonica chamada) {
         return false;
     }
 
@@ -24,7 +24,7 @@ public abstract class ChamadaEstado {
         return false;
     }
 
-    public boolean desligar(ChamadaTelefonica chamada) {
+    public boolean encerrar(ChamadaTelefonica chamada) {
         return false;
     }
 }
