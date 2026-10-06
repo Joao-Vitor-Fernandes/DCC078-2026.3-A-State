@@ -8,18 +8,15 @@ public class ChamadaEstadoEmAndamento extends ChamadaEstado {
         return instance;
     }
 
-    @Override
     public String getEstado() {
         return "Em andamento";
     }
 
-    @Override
     public boolean colocarEmEspera(ChamadaTelefonica chamada) {
         chamada.setEstado(ChamadaEstadoEmEspera.getInstance());
         return true;
     }
 
-    @Override
     public boolean encerrar(ChamadaTelefonica chamada) {
         chamada.setEstado(ChamadaEstadoEncerrada.getInstance());
         return true;
